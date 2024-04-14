@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Programming Project 1 (Sorting Algorithms)</h1>
+        
+          <label for="algorithm">Choose an algorithm:</label>
+        <select id="algorithm">
+          <option value="merge">Merge Sort</option>
+          <option value="heap">Heap Sort</option>
+          <option value="quick">Quick Sort</option>
+          <option value="quick_3">Quick Sort using 3 Median</option>
+          <option value="insertion">Insertion Sort</option>
+          <option value="selection">Selection Sort</option>
+          <option value="bubble">Bubble Sort</option>
+        </select>
+          <label for="inputSize">Input size:</label>
+        <input type="number" id="inputSize" value="100" min="-100000" max="100000" name="inputSize">
+        <div class="btn">
+          <button id="run">Run Single</button>
+        <button id="compareAll">Compare All Algorithm</button>
+        </div>
+        <div class="group">
+          <label for="customInput">Input Custom Array:</label>
+          <textarea id="customInput" name="customInput" cols="40" rows="2" placeholder="Enter array in comma separated format Eg. 1,2,3"></textarea>
+        </div>
+        <div class="btn">
+          <button id="compareCustom">Compare All Using Custom Input</button>
+          <button id="customInputBtn">Custom Array Input</button>
+        <button id="reset">Reset Graph</button>
+        </div>
+        <div class="output canvas-container">
+          <canvas id="algorithmChart"></canvas>
+        </div>
+        <div id="tableSummary">
+          <h3>Table for single Algorithm</h3>
+          <table id="runTime">
+            <thead>
+              <tr>
+                <th>Algorithm</th>
+                <th>Input Size</th>
+                <th>Run Time(ms)</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div id="customSummary">
+          <h3>Table for Custom Input Array for Single Algorithm</h3>
+          <table id="runCustomTime">
+            <thead>
+              <tr>
+                <th>Algorithm</th>
+                <th>Input Size</th>
+                <th>Run Time(ms)</th>
+                <th>Sorted Array</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div id="customAllSummary">
+          <h3>Table for Compare All Algorithm using Custom Input Array</h3>
+          <table id="runCustomAllTime">
+            <thead>
+              <tr>
+                <th>Output Number</th>
+                <th>Algorithm</th>
+                <th>Input Size</th>
+                <th>Run Time(ms)</th>
+                <th>Sorted Array</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div id="combineSummary">
+          <h3>Table for All Algorithm</h3>
+          <table id="runAllTime">
+            <thead>
+              <tr>
+                <th>Output Number</th>
+                <th>Algorithm</th>
+                <th>Input Size</th>
+                <th>Run Time(ms)</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+    </div>
+      <script src="algo.js"></script>
+</body>
+</html>

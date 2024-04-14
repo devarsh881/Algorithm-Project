@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  #container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+
+  select, input {
+    margin: 10px;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #5cb85c;
+    color: white;
+    border: 0;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #449d44;
+  }
+
+  select, input[type=number], textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  #output {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .canvas-container {
+    width: 600px; 
+    height: 400px; 
+    margin: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0px;
+  }
+
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+
+  table th {
+    background-color: #333;
+    color: white;
+
+  }
+
+  .group {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 15px;
+  }
+
+  .group label {
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+
+  .group textarea {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+
+  #tableSummary, #combineSummary {
+    margin-top: 0px;
+  }
